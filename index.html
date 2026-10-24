@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad - Penales: Lanzador vs Portero</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --accent:#1e88e5; --card:#f3f4f6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f172a; --fg:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; --card:#1e293b; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; line-height:1.65; }
+  main { max-width:820px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:2rem; margin-bottom:4px; }
+  h2 { margin-top:36px; font-size:1.3rem; border-bottom:2px solid var(--accent); padding-bottom:4px; }
+  .meta { color:var(--muted); font-size:.95rem; }
+  .box { background:var(--card); border-left:4px solid var(--accent); padding:12px 16px; border-radius:6px; margin:16px 0; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:.95rem; }
+  th, td { border:1px solid var(--muted); padding:8px; text-align:left; vertical-align:top; }
+  th { background:var(--card); }
+  footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidad</h1>
+<p class="meta"><strong>Aplicación:</strong> Penales: Lanzador vs Portero (identificador de paquete: com.benjap.penales_app)<br>
+<strong>Última actualización:</strong> 24 de octubre de 2026</p>
+
+<div class="box">
+  <strong>Resumen rápido:</strong> No necesitas crear una cuenta, no te pedimos nombre, correo ni teléfono, no mostramos anuncios y no vendemos tus datos. El modo contra bot funciona sin internet y no envía nada a ningún servidor. El modo online solo intercambia los datos mínimos necesarios para que la partida funcione.
+</div>
+
+<h2>1. Quién es el responsable</h2>
+<p>El responsable del tratamiento de los datos de esta aplicación es <strong>[TU NOMBRE O NOMBRE DEL ESTUDIO]</strong> (en adelante, "el Desarrollador", "nosotros").</p>
+<p>Contacto para temas de privacidad: <a href="mailto:[TU_CORREO]">[TU_CORREO]</a></p>
+
+<h2>2. Información que recopilamos</h2>
+
+<h3>2.1 Información que NO recopilamos</h3>
+<p>La aplicación no te solicita ni almacena: nombre, apellido, correo electrónico, número de teléfono, dirección, fecha de nacimiento, fotos, contactos, ubicación (GPS), micrófono, cámara ni archivos de tu dispositivo. No existe registro ni inicio de sesión.</p>
+
+<h3>2.2 Información que se procesa en el modo online</h3>
+<p>Cuando juegas contra otra persona, la app se conecta a nuestro servidor de partidas mediante una conexión segura (WebSocket sobre TLS, <code>wss://</code>). Para que el juego funcione se procesa:</p>
+<table>
+  <tr><th>Dato</th><th>Para qué se usa</th><th>Conservación</th></tr>
+  <tr><td>Código de sala (6 caracteres)</td><td>Emparejarte con tu rival</td><td>Solo mientras la sala está activa</td></tr>
+  <tr><td>Identificador de sesión (token temporal)</td><td>Reconectarte si pierdes la señal durante una partida</td><td>Solo mientras dura la partida; se elimina al terminar o expirar</td></tr>
+  <tr><td>Acciones de juego (hacia dónde tiras o te lanzas, resultado de cada tiro, marcador)</td><td>Resolver los tiros y mostrar el resultado a ambos jugadores</td><td>Solo durante la partida; no se asocian a una identidad personal</td></tr>
+  <tr><td>Dirección IP y datos técnicos de conexión</td><td>Establecer la conexión de red. Son procesados de forma automática por el servidor y por el proveedor de alojamiento</td><td>Según los registros técnicos del proveedor de alojamiento (ver sección 5)</td></tr>
+</table>
+<p>Estos datos son técnicos y efímeros. No los usamos para identificarte, crear perfiles ni hacer publicidad.</p>
+
+<h3>2.3 Información almacenada solo en tu dispositivo</h3>
+<p>La app guarda localmente, mediante el almacenamiento de preferencias del sistema, un contador de <strong>goles</strong> y <strong>atajadas</strong> acumuladas para mostrarlos en el menú principal. Esta información <strong>nunca se envía a nuestros servidores</strong> y se elimina si desinstalas la app o borras sus datos desde los ajustes del dispositivo.</p>
+
+<h3>2.4 Modo contra bot (sin conexión)</h3>
+<p>Las partidas contra el bot se ejecutan íntegramente en tu dispositivo. No se requiere internet ni se transmite ningún dato.</p>
+
+<h2>3. Cómo usamos la información</h2>
+<ul>
+  <li>Crear salas, emparejar jugadores y ejecutar las partidas online.</li>
+  <li>Permitir la reconexión si se interrumpe tu conexión.</li>
+  <li>Mantener la seguridad y estabilidad del servicio (por ejemplo, prevenir abusos o fallos).</li>
+  <li>Mostrar tus estadísticas personales en tu propio dispositivo.</li>
+</ul>
+<p>No utilizamos tus datos para publicidad, marketing, elaboración de perfiles ni decisiones automatizadas con efectos legales sobre ti.</p>
+
+<h2>4. Base legal</h2>
+<p>Tratamos los datos técnicos mínimos descritos arriba porque son necesarios para prestarte el servicio que solicitas al usar el modo online (ejecución del servicio) y por nuestro interés legítimo en mantener la seguridad y el funcionamiento del juego. Al usar el modo online aceptas este tratamiento. Puedes jugar sin conexión en cualquier momento sin que se procese ningún dato.</p>
+
+<h2>5. Servicios de terceros</h2>
+<p>La aplicación no integra publicidad, analíticas de terceros, redes sociales, ni herramientas de seguimiento. Sin embargo, el servidor del modo online está alojado en la plataforma <strong>Render</strong> (<a href="https://render.com/privacy" target="_blank" rel="noopener">política de privacidad de Render</a>), que puede registrar datos técnicos de conexión (como la dirección IP) como parte de su operación normal de infraestructura.</p>
+<p>Si descargas la app desde <strong>Google Play</strong> u otra tienda, la tienda puede recopilar información conforme a sus propias políticas, sobre las cuales no tenemos control.</p>
+
+<h2>6. Compartición de datos</h2>
+<p>No vendemos, alquilamos ni intercambiamos tus datos personales. Solo podrían divulgarse:</p>
+<ul>
+  <li>A <strong>tu rival</strong> dentro de la partida, únicamente las acciones de juego necesarias (por ejemplo, el resultado del tiro). Nunca se comparte tu IP ni otro dato técnico con el otro jugador.</li>
+  <li>A <strong>proveedores de infraestructura</strong> estrictamente necesarios para operar el servidor (ver sección 5).</li>
+  <li>A <strong>autoridades competentes</strong>, si una ley o una orden judicial válida lo exige.</li>
+</ul>
+
+<h2>7. Transferencias internacionales</h2>
+<p>El proveedor de alojamiento puede operar servidores en países distintos al tuyo. Al usar el modo online, tus datos técnicos de conexión pueden ser procesados fuera de tu país de residencia. Procuramos usar proveedores que aplican medidas de seguridad adecuadas.</p>
+
+<h2>8. Conservación de los datos</h2>
+<p>Los datos de las partidas (códigos de sala, tokens, acciones y marcadores) se mantienen únicamente mientras la sala o la partida están activas y se eliminan al finalizar o al expirar la sesión. Los registros técnicos del proveedor de alojamiento se conservan según sus propias políticas. Los datos guardados en tu dispositivo permanecen hasta que los borres o desinstales la app.</p>
+
+<h2>9. Seguridad</h2>
+<p>La comunicación entre la app y el servidor se realiza mediante conexión cifrada (TLS). Aplicamos medidas razonables para proteger la información, pero ningún sistema conectado a internet es completamente infalible, por lo que no podemos garantizar seguridad absoluta.</p>
+
+<h2>10. Tus derechos</h2>
+<p>Según la legislación aplicable en tu país (por ejemplo, la Ley N.º 19.628 sobre protección de la vida privada en Chile y la normativa que la reemplace o complemente, u otras leyes de protección de datos de tu región), puedes tener derecho a solicitar el <strong>acceso, rectificación, supresión, oposición o portabilidad</strong> de tus datos personales, así como a retirar tu consentimiento.</p>
+<p>Dado que no recopilamos datos que te identifiquen directamente, es posible que no podamos asociar información a una persona concreta. Aun así, puedes escribirnos a <a href="mailto:[TU_CORREO]">[TU_CORREO]</a> y responderemos tu solicitud en un plazo razonable.</p>
+<p><strong>Cómo eliminar tus datos locales:</strong> desinstala la aplicación o usa en Android <em>Ajustes → Aplicaciones → Penales → Almacenamiento → Borrar datos</em>.</p>
+
+<h2>11. Privacidad de los menores</h2>
+<p>La aplicación es un juego deportivo de uso general, pero no está dirigida a menores de 13 años y no recopilamos a sabiendas información personal de niños. Como no existe registro ni se solicitan datos personales, el uso por parte de menores no implica entrega de información identificable. Si eres padre, madre o tutor y crees que un menor ha proporcionado datos personales, contáctanos y los eliminaremos.</p>
+
+<h2>12. Permisos de la aplicación</h2>
+<table>
+  <tr><th>Permiso</th><th>Motivo</th></tr>
+  <tr><td>Acceso a internet</td><td>Solo para el modo online (conectarse al servidor de partidas)</td></tr>
+</table>
+<p>La app también reproduce sonidos y música ambiental; esto no requiere permisos especiales ni accede al micrófono.</p>
+
+<h2>13. Enlaces externos</h2>
+<p>Esta política puede enlazar a sitios de terceros (como Render o Google Play). No somos responsables de sus contenidos ni prácticas de privacidad; te recomendamos revisar sus políticas.</p>
+
+<h2>14. Cambios en esta política</h2>
+<p>Podemos actualizar esta política ocasionalmente. Cuando lo hagamos, modificaremos la fecha de "Última actualización" en la parte superior. Te recomendamos revisarla de forma periódica. El uso continuado de la app después de un cambio implica la aceptación de la política actualizada.</p>
+
+<h2>15. Contacto</h2>
+<p>Si tienes preguntas, comentarios o solicitudes sobre esta Política de Privacidad, escríbenos a:</p>
+<p><strong>[TU NOMBRE O NOMBRE DEL ESTUDIO]</strong><br>
+Correo: <a href="mailto:[TU_CORREO]">[TU_CORREO]</a></p>
+
+<footer>
+  <p>© 2026 [TU NOMBRE O NOMBRE DEL ESTUDIO]. Todos los derechos reservados.</p>
+</footer>
+
+</main>
+</body>
+</html>
